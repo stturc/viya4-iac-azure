@@ -372,6 +372,7 @@ variable "node_pools" {
   type = map(object({
     machine_type = string
     os_disk_size = number
+    os_type      = optional(string)
     min_nodes    = string
     max_nodes    = string
     max_pods     = string
